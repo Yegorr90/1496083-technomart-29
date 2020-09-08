@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Егор Дубровин](https://up.htmlacademy.ru/htmlcss/29/user/1496083).
-* Наставник: [Мария Белогубова](https://htmlacademy.ru/profile/id87018).
+* Наставник: [Мария](https://htmlacademy.ru/profile/id87018).
 
 ---
 
