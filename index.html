@@ -1,62 +1,66 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic;display=swap">
+    <link href="css/style.css" rel="stylesheet">
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link rel="stylesheet" href="index-2.html">
+
   </head>
-  <body>
-  	<header>
+  <body class="page-body">
+  	<header class="header">
   		<div class="block">
-  		<div class="head_tehno">
-  			<h3>Техномарт</h3>
-  			<div class="Search">
-  				<form>
-  					<input type="text" placeholder="Поиск">
-  					<button type="submit"></button>
-  				</form>
+        <div class="container">
+  		    <div class="head-tehno">
+      			<a href="#">Техномарт</a>
+            </div>
+      			<div class="Search">
+      				<form>
+      					<input class="search" type="text" placeholder="Поиск">
+      					<button type="submit"></button>
+            				</form>
+      			</div>
+      			<li>
+      				Закладки
+      			</li>
+      			<li>
+  				Корзина
+  			</li>
+  			<div class="order">
+  				<a href="">оформить заказ</a>
 			</div>
-			<li>
-				Закладки
-			</li>
-			<li>
-				Корзина
-			</li>
-			<div class="order">
-				<a href="">оформить заказ</a>
-			</div>
+      </div>
+      </div>
 
-  		</div>
 
-  		<a href=""><p>Интернет-магазин <br>строительных материалов <br> и инструментов для ремонта	
+  	<p>Интернет-магазин строительных материалов и инструментов для ремонта	
   			
-  		</p></a>
-
-  		<div>
-  			<img src="" alt="icon-tel">
-  			<a href="tel:+78125550555">+7(812)555-05-55</a>
+  		</p>
+  		<div class="tel">
+  			<a class="contacts-phone" href="tel:+78125550555">+7(812)555-05-55</a>
   		</div>
   		<p>
   			г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
   		</p>
-  		<button type="button" id="Enter">Войти</button>
-    	<button type="button" id="check in">Регистрация</button>
+  		<button type="button" class="Enter">Войти</button>
+    	<button type="button" class="check in">Регистрация</button>
     	<div class="Object">
     		<ul>
-    			<li>Главная</li>
-    			<li>Компания</li>
-    			<li>Каталог</li>
-    			<li>Новости</li>
-    			<li>Спецпредложения</li>
-    			<li>Доставка </li>
-    			<li>Контакты</li>
+    			<li><a href="">Главная</a></li>
+    			<li><a href="">Компания</a></li>
+    			<li><a href="">Каталог</a></li>
+    			<li><a href="">Новости</a></li>
+    			<li><a href="">Спецпредложения</a></li>
+    			<li><a href="">Доставка</a></li>
+    			<li><a href="">Контакты</a></li>
     		</ul>
+    	</div>
+
   	</header>
 
 
-  	</div>
 
-  <main>
+  <main class="container-main">
   	<section >
   		<ul>
   			<li>
@@ -86,15 +90,16 @@
   			<li><h1>Перфораторы</h1>
   				<a href="#">Настоящие мужские игрушки</a> 				
   					<img src="" alt="Perforators">
-  				    <button type="button" value="Открыть Каталог"></button>
-
+  				    <button type="button" value="Открыть Каталог"><a href="catalog.html">Открыть Каталог</a></button>
   			</li>
+  			<div class="seil50">
   			<li>
   				<h3>Скидка 50%</h3>
   				<a href="#">На 350 товаров</a>
   					<img src="" alt="discount">
   				
   			</li>
+  			</div>
   			<li>
   				<h3>Доставка</h3>
   				<a href="#">Бесплатно</a>
@@ -102,15 +107,45 @@
   			</li>
   		</ul>
   	</section>
+    
   	<div class="Popular goods">
   		<span>Популятрные товары:</span>
   		<a href="#">Все популятрные товары</a>
   	</div>
   	<div class="Products">
-  		<div class="perforator" id="BFG 9000"><button type="bay">25500 р</button> <img src="" alt=""></div>
-  		<div class="perforator" id="BFG 3000"><button type="bay">15500 р</button> <img src="" alt=""></div>
-  		<div class="perforator" id="BFG 6000"><button type="bay">25500 р</button> <img src="" alt=""></div>
-  		<div class="perforator" id="BFG 2000"><button type="bay">12500 р</button> <img src="" alt=""></div>
+  		<div class="perforator" id="BFG 9000">
+        <button class="button" type="bay">25500 р</button>
+         <img src="" alt="">
+         <div class="buy-perforator">
+           <button class="button button-buy"></button>
+           <button class="button button-mark"></button>
+         </div>
+       </div>
+  		<div class="perforator" id="BFG 3000">
+        <button class="button" type="bay">15500 р</button>
+        <img src="" alt="">
+         <div class="buy-perforator">
+           <button class="button button-buy"></button>
+           <button class="button button-mark"></button>
+         </div>
+      </div>
+  		<div class="perforator" id="BFG 6000">
+        <button class="button" type="bay">25500 р</button>
+         <img src="" alt="">
+          <div class="buy-perforator">
+           <button class="button button-buy"></button>
+           <button class="button button-mark"></button>
+         </div>
+       </div>
+  		<div class="perforator" id="BFG 2000">
+        <button class="button" type="bay">12500 р</button>
+         <img src="" alt="">
+          <div class="buy-perforator">
+           <button class="button button-buy"></button>
+           <button class="button button-mark"></button>
+         </div>
+       </div>
+
   	</div>
   	<div class="Popular producers">
   		<span>Популятрные производители:</span>
@@ -155,9 +190,9 @@
   		<img src="" alt="car_truck">
   	</div>
   	<div class="block_footer">
-  		<section class="section">
+  		<section class="section-news">
   			<div class="company">
-  				<h1>Компания</h1>
+  				<h2>КОМПАНИЯ «ТЕХНОМАРТ»</h2>
   				<p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и <br> строительства не оставит равнодушными любителей сэкномить на гастарбайтерах. </p>
 
   				<p>
@@ -175,18 +210,18 @@
   				<p>Вы можете забрать товар сами, <br> заехав в наш офис.</p>
   				<a class="img-map" href="#"> <img src="" alt="map"></a>
 
-  				<div class="button" id="button_address"><button type="button">Заблудились? Напишите нам!</button> </div>
+  				<div class="button-contact"><button type="button">Заблудились? Напишите нам!</button> </div>
   			</div>
   		</section>
   	</div>
   	</main>
-<footer>
-	<div class="Contact Information">
+<footer class="page-footer main-footer">
+	<section class="footer-contacts">
 		<div class="head_tehno">
   			<h3>Техномарт</h3>
   			</div>
   			<address>г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br> +7(812)555-05-55</address>
-	</div>
+  </section>
 	<div class="navigation">
 	<nav> 
 		<ul class="list1">
@@ -212,10 +247,17 @@
 			</p>
 		</div>
 	<div class="social">
-		<a href="#vk">В контакте</a>
-		<a href="#fb">Фейсбук</a>
-		<a href="#inst"> Истаграмм </a>
-		
+    <ul>
+      <li>
+		<a class="social-button" href="#">Вконтакте</a>
+    </li>
+    <li>
+		<a class="social-button" href="#">Фейсбук</a>
+    </li>
+    <li>
+		<a class="social-button" href="#">Инстаграм</a>
+    </li>
+		</ul>
 	</div>	
 	<div class="Feedback">
 		<p>Обратная связь:</p>
