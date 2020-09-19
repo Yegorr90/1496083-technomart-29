@@ -1,4 +1,11 @@
+/* <img src="img/photo-BFG9000.jpg" width="220" height="165" alt="Перфоратор BOSCH">
+<i>Интернет-магазин строительных материалов и инструментов для ремонта</i>
 
+
+
+
+
+*/
 :root{
 --basic-white:#FFFFFF;
 --basic-very-dark:#293449;
@@ -18,7 +25,7 @@
 .page-body{
 margin: 0;
 padding: 0;
-font-family: "PT Sans Narrow", Arials, sans-serif;
+font-family: "PT Sans Narrow", Arial, sans-serif;
 font-size: 18px;
 line-height: 24px;
 font-weight: 700;
@@ -104,3 +111,5 @@ background: #32425C;
 
 
 }
+
+
