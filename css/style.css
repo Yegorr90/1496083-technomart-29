@@ -1,10 +1,5 @@
 /* <img src="img/photo-BFG9000.jpg" width="220" height="165" alt="Перфоратор BOSCH">
 <i>Интернет-магазин строительных материалов и инструментов для ремонта</i>
-
-
-
-
-
 */
 :root{
 --basic-white:#FFFFFF;
@@ -18,9 +13,14 @@
 --basic-light-orange:#ffc047;
 --basic-light-grayish:#f9f5f0;
 --basic-white:#FFFFFF;
+--basic-matt:#F1F5F7;
 
 }
 
+header{
+background-color: var(--basic-matt);
+
+}
 
 .page-body{
 margin: 0;
@@ -31,33 +31,27 @@ line-height: 24px;
 font-weight: 700;
 color: ;
 text-transform: uppercase;
-background-color: var();
 background-image: url();
 background-position: top center;
 background-repeat: no-repeat;
 }
 
 .block{
-display: block;
+display:grid;
+grid-template-columns: ;
 background-color: var(--basic-very-dark);
 background-position: center;
 color: var(--basic-white);
-bottom: 90%;
-margin: 0 auto;
-
-
-
 }
 .container{
-margin: 0 auto;
-width: 940px;
-
+display:grid; 
+margin: 0 10%;
+width: 90%;
 }
 .head-tehno a{
-
 display: inline-block;
 width: 170px;
-padding: 11px 0 7px 30px;
+padding: 11px 0px 7px 30px;
 font-size: 24px;
 line-height: 24px;
 font-weight: 400;
@@ -69,9 +63,7 @@ color: var(--basic-white);
 background-color: var(--basic-red);
 box-shadow: 0 5px 0 0 #b52933;
 float: left;
-
 }
-
 
 
 
@@ -85,31 +77,51 @@ padding:
 }
 
 .order a{
-color: var(--basic-white);
-background-color: var(--basic-lime-green);
+
 }
 .order{
-text-decoration: none;
-position: absolute;
-left: 75%;
-right: 12.17%;
-top: 2.81%;
-bottom: 89.69%;
-margin: 0px;
 
 }
 
 .Object{
-position: absolute;
 width: 940px;
-height: 60px;
-background: #32425C;
+background-color: var(--basic-very-dark);
+padding-top: 20px;
+padding-bottom: 20px;
+
+
+
 
 }
 
 .button-buy{
 
-
 }
 
 
+.Object li{
+display: inline;
+justify-content: center;
+text-decoration:none;
+}
+
+.Object a{
+
+color: var(--basic-white);
+padding:;
+text-decoration:none;
+
+}
+
+.title-shop{
+width: 250px;
+float: left;
+font-size: 16px;
+font-style: italic;
+color: var(--basic-red);
+margin-left: 12%;
+margin-bottom: 160px;
+}
+
+.tel{
+}
