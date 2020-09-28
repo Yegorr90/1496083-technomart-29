@@ -10,28 +10,33 @@
   <body class="page-body">
   	<header class="header">
   		<div class="block">
-        <div class="container">
+        <div class="container top-head">
   		    <div class="head-tehno">
       			<a href="#">Техномарт</a>
             </div>
-      			<div class="Search">
+            <ul class="top-head-helper">
+      			<li class="search">
       				<form>
       					<input class="search" type="text" placeholder="Поиск">
-      					<button type="submit"></button>
+      	
             				</form>
-      			</div>
+      			</li>
+
       			<li>
       				Закладки
       			</li>
       			<li>
   				Корзина
   			</li>
+      </ul>
   			<div class="order">
   				<a href="">оформить заказ</a>
+
 			       </div>
     </div>
   </div>
-  <div class="title-shop container">
+  <div class="container">
+  <div class="title-shop">
     <p>
       Интернет-магазин строительных материалов и инструментов для ремонта 
       </p>
@@ -48,8 +53,7 @@
   		<button type="button" class="Enter">Войти</button>
     	<button type="button" class="check in">Регистрация</button>
 
-      <div class="Object">
-        <ul>
+        <ul class="Object">
           <li><a href="">Главная</a></li>
           <li><a href="">Компания</a></li>
           <li><a href="">Каталог</a></li>
@@ -58,45 +62,52 @@
           <li><a href="">Доставка</a></li>
           <li><a href="">Контакты</a></li>
         </ul>
-      </div>
     	
-
+      </div>
   	</header>
 
 
 
-  <main class="container-main">
-  	<section >
-  		<ul>
-  			<li>
+  <main>
+  	<section>
+      <div class="level-1">
+  		<ul class="container-main">
+  			<li class="category">
   				<h3>Материалы</h3>
+
   				<a href="#">На любой вкус</a>
   			
+  					<img src="" alt="">  				
+  			</li>
+  			<li class="category">
+  				<h3>Инструменты</h3>
+  				<a href="#"> На все случаи</a>
+  				
   					<img src="" alt="">
   				
 
   			</li>
-  			<li>
-  				<h3>Инструменты</h3>
-  				<a href="#"> На все случаи</a>
-  				
-  					<img src="" alt="Materials">
-  				
-
-  			</li>
-  			<li>
+  			<li class="category">
   				<h3>Техника</h3>
   				<a href="#">Для стройки</a>
   				
-  					<img src="" alt="Technics">
-  			
-
+  					<img src="" alt="">
   			</li>
-  			<li><h1>Перфораторы</h1>
-  				<a href="#">Настоящие мужские игрушки</a> 				
-  					<img src="" alt="Perforators">
-  				    <button type="button" value="Открыть Каталог"><a href="catalog.html">Открыть Каталог</a></button>
-  			</li>
+        </ul>
+        </div>
+        <div class="level-2">
+        <ul>
+          <div class="men-toys">
+    			   <h1>Перфораторы</h1>
+    				<span>Настоящие мужские игрушки</span> 				
+    					<img src="" alt="">
+    				    <button type="button" value="Открыть Каталог"><a href="catalog.html">Открыть Каталог</a></button>
+                <div class="button-controls">
+                  <input type="radio"  name="pol">
+                  <input type="radio"  name="pol">
+                </div> 			
+        </div>
+        <div class="level-3">
   			<div class="seil50">
   			<li>
   				<h3>Скидка 50%</h3>
@@ -106,14 +117,21 @@
   			</li>
   			</div>
   			<li>
+          <div class="seil50">
   				<h3>Доставка</h3>
   				<a href="#">Бесплатно</a>
-  					<img src="" alt="Free">				
+  					<img src="" alt="Free">	
+            </div>			
   			</li>
+      </div>
+      </div>
   		</ul>
+      </div>
   	</section>
-    
-  	<div class="Popular goods">
+
+
+    <div class="wrapper">
+  	<div class="Popular-goods">
   		<span>Популятрные товары:</span>
   		<a href="#">Все популятрные товары</a>
   	</div>
@@ -150,8 +168,10 @@
            <button class="button button-mark"></button>
          </div>
        </div>
-
+       </div>
   	</div>
+
+
   	<div class="Popular producers">
   		<span>Популятрные производители:</span>
   		<a href="#">Все популятрные производители</a>
