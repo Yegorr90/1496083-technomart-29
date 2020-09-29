@@ -206,72 +206,54 @@ white-space: nowrap;
 }
 
 .level-2 ul{
-margin-top: 20px;
+display: grid;
+grid-template-areas: 
+"a a b"
+"a a c"; 
+grid-gap: 20px;
+
 }
-.men-toys{
-width: 620px;
-height: 266px;
+.men-toys {
 background-color: #806F5B;
-margin-right: 20px;
-float: left;
+grid-area:a; 
 }
+
 .men-toys span{
 color: var(--basic-white);
-padding: 64px 233px 178px 24px;
 }
+
 .men-toys h1 {
 font-size: 36px;
 text-transform: uppercase;
-padding-left: 24px;
-padding-top: 23px;
-padding-bottom: 20px;
-padding-right: 356px;
 color: var(--basic-white);
 }
+
 .men-toys button{
 width: 192px;
 height: 38px;
 background-color: var(--basic-red);
-margin-top: 110px;
-margin-left: 23px;
-border-radius: 7px;
 }
+
 .men-toys a{
 text-decoration: none;	
+}
+
+.seil50 {
+background-color: blue;
+grid-area:b; 
+
+}
+
+.delivery {
+background-color: black;
+grid-area:c; 
 }
 
 .button-controls{
 text-align: center;
 }
 
-.seil50 {
-width: 300px;
-height: 123px;
-background-color: red;
-color: var(--basic-white);
-float: left;
-margin-bottom: 20px;
-}
-
-.seil50 a{
-color: var(--basic-white);
-text-decoration: none;
-}
-
-.seil50:last-child{
-background-color: blue;
-margin-right: 0px;
-float: all;
-}
-
-.level-2:after {
-clear: both;
-content:"";
-display: table;
-margin-bottom: 60px;
-}
-
-
+/*
 .wrapper{
 width: 100%
 margin-top:60px;
@@ -280,5 +262,6 @@ background-color: red;
 
 .Popular-goods{
 width: 940px;
-margin: 0 auto;
+margin: 60px auto;
 }
+*/
