@@ -3,6 +3,7 @@
 */
 :root{
 --basic-white:#FFFFFF;
+--basic-dark:#32425C;
 --basic-very-dark:#293449;
 --basic-red:#EE3643;
 --basic-green:#63A63E;
@@ -12,7 +13,7 @@
 --basic-lime-green:#8ed78f;
 --basic-light-orange:#ffc047;
 --basic-light-grayish:#f9f5f0;
---basic-white:#FFFFFF;
+--basic-grey:#f7f3ec;
 --basic-matt:#F1F5F7;
 
 }
@@ -132,7 +133,6 @@ display: inline;
 justify-content: center;
 text-decoration:none;
 }
-
 .Object a{
 color: var(--basic-white);
 text-decoration:none;
@@ -156,15 +156,16 @@ margin-top:60px ;
 width: 100%;
 
 }
-*{
-	padding: 0; margin:0;
-}
 
-.level-1 ul{
-list-style: none;
+
+
+.level ul{
 display: grid;
-grid-template-columns: 300px 300px 300px;
-grid-template-rows: 123px ;
+grid-template-areas: 
+"a b c"
+"d d e"
+"d d f";
+grid-auto-rows: 123px;
 grid-gap: 20px;
 
 }
@@ -185,14 +186,17 @@ padding-right: 163px;
 padding-top: 20px;
 padding-bottom: 73px;
 color: var(--basic-white);
+grid-area:a; 
 }
 
 .category:nth-child(2) {
 background-color: var(--basic-blue);
+grid-area: b;
 }
 
-.category:last-child {
+.category:nth-child(3) {
 background-color: var(--basic-purple);
+grid-area: c;
 }
 
 .container-main a{
@@ -205,17 +209,9 @@ white-space: nowrap;
 
 }
 
-.level-2 ul{
-display: grid;
-grid-template-areas: 
-"a a b"
-"a a c"; 
-grid-gap: 20px;
-
-}
 .men-toys {
 background-color: #806F5B;
-grid-area:a; 
+grid-area:d; 
 }
 
 .men-toys span{
@@ -240,28 +236,198 @@ text-decoration: none;
 
 .seil50 {
 background-color: blue;
-grid-area:b; 
+grid-area:e; 
 
 }
 
 .delivery {
 background-color: black;
-grid-area:c; 
+grid-area:f; 
 }
 
 .button-controls{
 text-align: center;
 }
 
-/*
+
 .wrapper{
 width: 100%
+}
+.wrapper2{
+width: 940px;
+margin-left:auto; 
+margin-right:auto;
 margin-top:60px;
+margin-bottom:20px;
+
+}
+
+.popular-goods{
+width: 940px;
+height: 90px;
+margin-left:auto; 
+margin-right:auto;
+margin-top:60px;
+margin-bottom:20px;
+background-color: var(--basic-grey);
+}
+
+.goods-span{
+text-transform: uppercase;
+font-size: 30px;
+margin-right: 20px;
+margin-top: 30px;
+text-align: center;
+
+}
+.products{
+width: 940px;
+margin: 0 auto;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-rows: 318px;
+grid-gap: 20px;
+
+}
+
+.perforator{
+background-color: #fff5ee;
+display: flex;
+text-align: center;
+align-items: center;
+
+}
+
+.perforator .button{
+font-weight: bold;
+text-transform: uppercase;	
+font-size: 17px;
+line-height: 18px;
+background-color: var(--basic-red);
+
+}
+
+.Popular-producers{
+width: 940px;
+margin:0px auto;
+background-color: var(--basic-grey);
+margin-left:auto; 
+margin-right:auto;
+margin-top:70px;
+margin-bottom:20px;
+height: 90px;
+}
+
+
+.firms{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-rows: 145px 145px; 
+grid-gap: 20px;
+}
+
+.rows{
 background-color: red;
 }
 
-.Popular-goods{
-width: 940px;
-margin: 60px auto;
+.block_services{
+width: 100%;
+height: 500px;
+margin: 70px 0;
+background-color: var(--basic-matt);
 }
-*/
+
+.box-clearfix{
+width: 940px;
+margin: 0 auto;
+}
+.box-clearfix h2{
+font-size: 30px;
+padding-top: 70px;
+margin-bottom: 30px;
+text-transform: uppercase;
+}
+
+.box-clearfix p{
+font-size: 13px;
+font-family: PT Sans;
+padding-top: 25px;
+font-family: Cuprum;
+font-style: normal;
+font-weight: normal;
+}
+
+
+.car {
+background-image: url(img/picture/car.png);
+margin-right: 10px;
+position: relative;
+}
+
+.block_footer {
+width: 940px;
+margin: 70px auto;
+background-color: red;
+display: grid;
+grid-template-columns: 460px 160px;
+grid-template-rows: ; 
+}
+
+.section-news{
+
+
+}
+
+.section-contacts{
+margin-right: 0px;
+text-align: left;
+background-color: blue;
+}
+
+footer{
+width: 100%;
+background-color: var(--basic-dark);
+}
+.footer_cooperative{
+width: 100%;
+background-color: var(--basic-very-dark);
+}
+
+.rights{
+width: 940px;
+margin: 0 auto;	
+color: white;
+}
+
+.footer-contacts{
+width: 330px;
+margin-left: 0px;
+margin-right: 70px; 
+height: 170px;
+background-color: red;
+}
+
+
+.footer-right{
+width: 620px;
+background-color: yellow;
+}
+
+
+
+.head_tehno{
+display: inline-block;
+width: 170px;
+padding: 11px 25px;
+font-size: 24px;
+line-height: 24px;
+font-weight: 400;
+font-family:"Arial",sans-serif;
+text-transform: uppercase;
+text-decoration: none;
+text-align:center;
+color: var(--basic-white);
+background-color: var(--basic-red);
+box-shadow: 0 5px 0 0 #b52933;
+float: left;	
+}
