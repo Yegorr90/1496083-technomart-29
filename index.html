@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru">
   <head>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cuprum&family=PT+Sans+Narrow&family=PT+Sans:ital@1&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
@@ -38,20 +38,25 @@
   <div class="container">
   <div class="title-shop">
     <p>
-      Интернет-магазин строительных материалов и инструментов для ремонта 
+      Интернет-магазин <br>
+      строительных материалов <br>
+      и инструментов для ремонта 
       </p>
     </div>
 
   
-
-  		<div class="tel">
-  			<a class="contacts-phone" href="tel:+78125550555">+7(812)555-05-55</a>
+    <div class="address">
+		  <div class="tel">
+  			<p>+7(812)555-05-55</p>
   		</div>
   		<p>
   			г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
   		</p>
-  		<button type="button" class="Enter">Войти</button>
-    	<button type="button" class="check in">Регистрация</button>
+      </div>
+      <div class="user-block box-clearfix">
+  		<a class="login" href="#login">Войти</a>
+    	<a class="registration" href="#registration">Регистрация</a>
+      </div>
 
         <ul class="Object">
           <li><a href="">Главная</a></li>
@@ -62,12 +67,8 @@
           <li><a href="">Доставка</a></li>
           <li><a href="">Контакты</a></li>
         </ul>
-    	
       </div>
   	</header>
-
-
-
   <main>
   	<section class="section-main">
       <div class="level">
@@ -204,15 +205,15 @@
   		<label for="button_Delivery">Доставка</label>
   		<label for="button_Guarantee">Гарантия</label>
   		<label for="button_Credit">Кредит</label>
-  		</div>
-  		<h1>Доставка</h1>
+  		<span>Доставка</span>
   		<p>
   		Мы с удовольствием доставим ваш товар прямо к <br>
   		вашему подъезду совершенно бесплатно! <br>
   		Ведь мы неплохо заработаем, <br>
   		поднимая его на ваш этаж!
   		</p>
-  		<div class="car">Грузовик</div> 
+      <div class="car">Грузовик</div>
+      </div>
       </div>
   	</div>
   	<div class="block_footer">
@@ -244,59 +245,62 @@
   	</main>
 <footer class="page-footer main-footer">
   <div class="rights">
-	<section class="footer-contacts">
-		<div class="head_tehno">
-  			<h3>Техномарт</h3>
-  			</div>
-  			<address>г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br> +7(812)555-05-55</address>
+  <section class="footer-contacts">
+    <div class="head_tehno">
+        <h3>Техномарт</h3>
+        </div>
+          <div class="address-footer">
+            г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>
+              +7(812)555-05-55
+              </div>
   </section>
-	<div class="navigation">
-	<div class="footer-right"> 
-		<ul class="list1">
-			<li> <a href="">Компания</a></li>
-			<li> <a href="">Новости</a></li>
-			<li> <a href="">Каталог</li>
-			<li> <a href="">Доставка</li>
-			<li> <a href="">Контакты</li>
-		</ul>
-		<ul class="list2">
-			<li>Материалы</li>
-			<li>Техника</li>
-			<li>Инструменты</li>
-			<li>Спецпредложения</li>
-		</ul>
-	</div>
+  <div class="navigation">
+  <div class="footer-right"> 
+    <ul class="list1">
+      <li> <a href="">Компания</a></li>
+      <li> <a href="">Новости</a></li>
+      <li> <a href="">Каталог</a></li>
+      <li> <a href="">Доставка</a></li>
+      <li> <a href="">Контакты</a></li>
+    </ul>
+    <ul class="list2">
+      <li>Материалы</li>
+      <li>Техника</li>
+      <li>Инструменты</li>
+      <li>Спецпредложения</li>
+    </ul>
   </div>
-	</div>
-	<div class="footer_cooperative">
-		<div class="rights">
-			<p>
-			© 2010-2020 Компания «Техномарт»
-			Все права защищены
-			</p>
-	<div class="social">
+  </div>
+  </div>
+  <div class="footer_cooperative">
+    <div class="rights">
+      <p>
+      © 2010-2020 Компания «Техномарт»<br>
+      Все права защищены
+      </p>
+  <div class="social">
     <ul>
       <li>
-		<a class="social-button" href="#">Вконтакте</a>
+    <a class="social-button" href="#">Вконтакте</a>
     </li>
     <li>
-		<a class="social-button" href="#">Фейсбук</a>
+    <a class="social-button" href="#">Фейсбук</a>
     </li>
     <li>
-		<a class="social-button" href="#">Инстаграм</a>
+    <a class="social-button" href="#">Инстаграм</a>
     </li>
-		</ul>
-	</div>	
-	<div class="Feedback">
-		<p>Обратная связь:</p>
-		<p>mail@htmlacademy.ru</p>
-	</div>
-	<div class="Designed">
-		<p>Базработанно</p>
-		<p>htmlacademy.ru</p>
-	</div>
+    </ul>
+  </div>  
+  <div class="Feedback">
+    <p>Обратная связь:</p>
+    <p>mail@htmlacademy.ru</p>
+  </div>
+  <div class="Designed">
+    <p>Базработанно-</p>
+    <p>htmlacademy.ru</p>
+  </div>
 </div>
-	</div>
+  </div>
 </footer>
 
  
