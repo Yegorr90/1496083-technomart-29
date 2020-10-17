@@ -229,7 +229,7 @@ top: 10px;
 left: 14px;
 width: 20px;
 height: 20px;
-background:url("img/icon/svg/icon-login.svg");
+background:url("../img/icon/svg/icon-login.svg") no-repeat;
 background-position: 0 0;
 }
 
@@ -283,8 +283,9 @@ padding-left: 0;
 }
 
 .men-toys{
-background-image: url("img/picture/mantoy2.png");	
+background-image: url("../img/picture/mantoy2.png");	
 background-repeat: no-repeat;
+background-size: 100%;
 }
 
 .section-main{
@@ -296,6 +297,7 @@ main li{
 list-style: none;
 text-decoration: none;
 }
+
 
 .category {
 background-color: var(--basic-yellow);
@@ -404,11 +406,12 @@ width: 940px;
 margin: 0 auto;
 display: grid;
 grid-template-columns: 1fr 1fr 1fr 1fr;
-grid-template-rows: 318px;
 grid-gap: 20px;
 
 }
-
+.drill-image{
+min-height: 160px;
+}
 
 .perforator .button{
 font-weight: bold;
@@ -759,13 +762,18 @@ padding: 44px 0;
 
 .perforator:hover{
  box-shadow: 0 0 10px rgba(0,0,0,0.5);
-
 }
 
-.drill-block{
-margin-top:28px;
-margin-bottom: 10px;
+.perforator{
+display: flex;
+flex-direction: column;
+align-items: center;
+padding-bottom: 20px;
+}
 
+
+.drill-block{
+margin-bottom: 10px;
 }
 
 
@@ -790,15 +798,17 @@ min-height: 20px;
 }
 
 .drill-bay{
+flex-grow: 1;	
+text-align: center;
+}
+.bay{
+display: inline-block;
 text-transform: uppercase;
 margin-top: 21px;
-width: 80px;
-margin-left: 45px;
 padding: 10px 14px 10px 29px;
 color: #fff;
 background: var(--basic-red);
 border-radius: 3px 0 0 3px;	
-text-align: center;
 }
 /*
 .drill-bay::after{
