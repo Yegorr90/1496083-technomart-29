@@ -144,16 +144,17 @@ display:flex;
 flex-direction: row;
 width: 940px;
 background-color: var(--basic-very-dark);
-padding-top: 20px;
-padding-bottom: 20px;
-justify-content: space-around;
 padding-left: 0px;
 padding-right: 0px;
 
 }
 
 .Object li{
-display: inline;
+flex-grow: 1;
+text-align: center;	
+padding-top: 20px;
+padding-bottom: 20px;
+display: inline-block;
 justify-content: center;
 text-decoration:none;
 font-size: 18px;
@@ -213,6 +214,19 @@ text-align: center;
 padding: 7px 0;
 }
 
+.tel::before{
+content: "";
+position: absolute;
+top: 6px;
+left: 9px;
+width: 20px;
+height: 20px;
+background: url(img/icon/svg/Shape.svg) no-repeat;
+background-position: -201px -202px;
+
+
+}
+
 .user-block{
 display: flex;
 flex-direction: row;
@@ -225,7 +239,7 @@ margin-top: -90px;
 .login::before{
 content: "";
 position: absolute;
-top: 10px;
+top: 14px;
 left: 14px;
 width: 20px;
 height: 20px;
@@ -307,6 +321,35 @@ padding-top: 20px;
 padding-bottom: 73px;
 color: var(--basic-white);
 grid-area:a; 
+}
+.category h3{
+
+}
+
+.bucket img {
+position: absolute;
+left: 37%;
+top: 49%;
+}
+.bucket::before{
+content: '';
+position: relative;
+width: 70px;
+height: 70px;
+z-index: 100;
+background: url(../img/icon/Rectangle 151.png);
+}
+
+
+
+.border-bay{
+display: inline-block;
+padding: 10px 23;
+text-align: center;
+background: rgba(0,0,0,.1);	
+font-size: 14px;
+line-height: 18px;
+margin: 10px 0 0 px;
 }
 
 .category:nth-child(2) {
@@ -485,6 +528,7 @@ margin-right: 10px;
 position: relative;
 background-repeat: no-repeat;
 background-position: right;
+padding-bottom: 130px;
 
 }
 
@@ -798,28 +842,27 @@ min-height: 20px;
 }
 
 .drill-bay{
-flex-grow: 1;	
+margin-top: auto;	
 text-align: center;
 }
 .bay{
 display: inline-block;
 text-transform: uppercase;
-margin-top: 21px;
 padding: 10px 14px 10px 29px;
 color: #fff;
 background: var(--basic-red);
 border-radius: 3px 0 0 3px;	
 }
-/*
+
 .drill-bay::after{
 content: '';
-position: absolute;
-top: 1px;
-border: 18px solid transparent;
+position: relative;
+top: 0px;
+border: 10px solid transparent;
 border-left-color: var(--basic-red);
 
 }
-*/
+
 .annotation{
 height: 260px;
 background-color: var(--basic-light-gray);
