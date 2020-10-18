@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <link href="https://fonts.googleapis.com/css2?family=Cuprum&family=PT+Sans+Narrow&family=PT+Sans:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cuprum&family=PT+Sans+Narrow&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
   </head>
-  <body>
+  <body class="page-body">
   	<header class="header">
   		<div class="block">
         <div class="container top-head">
@@ -29,7 +29,7 @@
   			</li>
       </ul>
   			<div class="order">
-  				<a href="">оформить заказ</a>
+  				<a href="">Оформить заказ</a>
 
 			       </div>
     </div>
@@ -74,7 +74,7 @@
   	<section class="section-main">
       <div class="level">
   		<ul class="container-main">
-  			<li class="category bucket">
+  			<li class="category bucket container-main-item">
   				<h3>Материалы</h3>
   				<a href="#" class="border-bay">На любой вкус</a>
   					<img src="img/icon/svg/bucket.svg" alt="">  				
@@ -237,19 +237,19 @@
 
   	<div class="block_services">
       <div class="box-clearfix">
-  		<h2>Сервисы</h2>
+  		<h2 class="h2">Сервисы</h2>
   		<p>
   			Хороший интренет-магазин отличается не только ценами! <br>
   			Мы стараемся изо всех сил, что бы сделать ваши покупки приятными.
   		</p>
   		<div class="services">
-        <div>
-    		<label for="button_Delivery">Доставка</label>
-    		<label for="button_Guarantee">Гарантия</label>
-    		<label for="button_Credit">Кредит</label>
+        <div class="services-menu">
+    		<label class="services-menu-item active" for="button_Delivery">Доставка</label>
+    		<label class="services-menu-item" for="button_Guarantee">Гарантия</label>
+    		<label class="services-menu-item" for="button_Credit">Кредит</label>
         </div>
         <div class="car">
-    		<span>Доставка</span>
+    		<span class="h2">Доставка</span>
     		<p>
     		Мы с удовольствием доставим ваш товар прямо к <br>
     		вашему подъезду совершенно бесплатно! <br>
