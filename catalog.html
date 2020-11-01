@@ -11,26 +11,24 @@
   		<div class="block">
         <div class="container top-head">
   		    <div class="head-tehno">
-      			<a href="#">Техномарт</a>
+      			<a href="index.html">Техномарт</a>
             </div>
-            <ul class="top-head-helper">
+              <ul class="top-head-helper">
       			<li class="search">
-      				<form>
+      				<form action="" method="get">
       					<input class="search" type="text" placeholder="Поиск">
-      	
-            				</form>
+      					<label class="label-search" for="search"></label>
+            	</form>
       			</li>
-
-      			<li>
-      				Закладки
+      		  <li class="bookmark">
+      				Закладки: 0
       			</li>
-      			<li>
-  				Корзина
+      			<li class="product">
+  				Корзина: 0
   			</li>
       </ul>
   			<div class="order">
-  				<a href="">оформить заказ</a>
-
+  				<a href="">Оформить заказ</a>
 			       </div>
     </div>
   </div>
@@ -56,13 +54,14 @@
       <div class="user-block">
   		<a class="loger login-actiw" href="#">Равшан Джамшутович</a>
   		<div class="user-menu">
-    	<a class="" href="#">Мои заказы</a>
-    	<a class="" href="#">Личный кабинет</a>
+    	<a class="my-order" href="#">Мои заказы</a>
+    	<div class="point"></div>
+    	<a class="my-office" href="#">Личный кабинет</a>
     	</div>
       </div>
       </div>
         <ul class="Object">
-          <li><a href="">Главная</a></li>
+          <li><a href="index.html">Главная</a></li>
           <li><a href="">Компания</a></li>
           <li><a href="">Каталог</a></li>
           <li><a href="">Новости</a></li>
@@ -89,45 +88,64 @@
 						</li>
 					</ul>
 				<div class="panel"><h4>Перфораторы</h4></div>
-				<section class="filter_search">
-					<div class="filter">Фильтр:
-					</div>
-					<div class="prise"> Цена:
-					</div>
-					<div class="range-prise"> 
-						<input type="range" min="0" max="30000" step="1" value="30000"> 
-					</div>
-					<div class="value1"> <input class="min" type="text" value="0"></div>
-					<span>-</span>
-					<div class="value2"> 
-						<input class="max" type="text" value="30000">
-					</div>
-					<aside class="manufacturers"><h3>Производители</h3>
+				<div class="catalog">
+				<aside><div class="filter">Фильтр:
+					</div>	
+				<form method="get" action="https://echo.htmlacademy.ru/" class="filter_search">
+						<fieldset class="filter-item">
+					        <legend>Стоимость:</legend>
+					        <div class="range-filter">
+					          <div class="range-controls">
+					            <div class="scale">
+					              <div class="bar"></div>
+					            </div>
+					            <div class="toggle toggle-min"></div>
+					            <div class="toggle toggle-max"></div>
+					          </div>
+					          <div class="price-controls">
+					            <label class="min-price">
+					              <input type="number" name="min-price" value="0">
+					            </label>
+					            <span class="span-value">-</span>
+					            <label class="max-price">
+					              <input type="number" name="max-price" value="30000">
+					            </label>
+					          </div>
+					        </div>
+					    </fieldset>
+					<fieldset class="filter-field"><h3 class="filter-title">Производители</h3>
 						<ul class="firm">
-							<li>bosh</li>
-							<li>интерскол</li>
-							<li>makita</li>
-							<li>dewalt</li>
-							<li>hitachi</li>
+							<li class="firm-item"> <input class="visually-hidden firm-checkbox" name="bosh" type="checkbox" id="bosh" checked>
+								<label class="form-lable" for="bosh">bosh</label></li>
+							<li class="firm-item"> <input class="visually-hidden firm-checkbox" name="interscol" type="checkbox" id="interscol">
+								<label class="form-lable" for="interscol">интерскол</label></li>
+							<li class="firm-item"> <input class="visually-hidden firm-checkbox" name="makita" type="checkbox" id="makita" checked>
+								<label class="form-lable" for="makita">makita</label></li>
+							<li class="firm-item"> <input class="visually-hidden firm-checkbox" name="dewalt" type="checkbox" id="dewalt">
+								<label class="form-lable" for="dewalt">dewalt</label></li>
+							<li class="firm-item"> <input class="visually-hidden firm-checkbox" name="hitachi" type="checkbox" id="hitachi">
+								<label class="form-lable" for="hitachi">hitachi</label></li>
 						</ul>
-						<div class="Nutrition"><h3>Питание:</h3>
-							<ul>
-								<li> <input type="radio" checked="">аккумуляторные</li>
-								<li><input type="radio" disabled="">сетевые</li>
+					</fieldset>
+						<fieldset class="filter-field"><h3 class="filter-title">Питание:</h3>
+							<ul class="battery-type">
+								<li class="firm-item"> <input class="visually-hidden battery-radio" type="radio" name="battery" id="battery" checked><label class="form-radio" for="battery" >аккумуляторные</label></li>
+
+								<li class="firm-item"><input class="visually-hidden battery-radio" name="battery" id="network" type="radio"><label class="form-radio" for="network" >сетевые</label></li>
 							</ul>
-							<button type="submit">Показать</button>
-						</div>
-					</aside>
-				</section>
-
-
+							<button class="submit">Показать</button>
+						</fieldset>
+				
+				</form>
+			</aside>
+				<div class="catalog-product">
 				<div class="sorting_container">
-					<span>Сортировка</span>
+					<span>Сортировка:</span>
 					<a href="#">По цене</a>
 					<a href="#">По типу</a>
 					<a href="#">По функционалу</a>
-					<a href="#"></a>
-					<a href="#"></a>
+					<a href="#" class="sorting-up up-color"></a>
+					<a href="#" class="sorting-down down-color"></a>
 				</div>
 					<div class="tool">
 						<div class="perforator" id="BFG 3000">
@@ -297,6 +315,8 @@
 						<a href="#Next">2</a>
 						<a href="#Next">3</a>
 						<a href="#Next">Следущая</a>
+					</div>
+					</div>
 					</div>
 					</div>
 				<article class="annotation">
