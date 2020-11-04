@@ -32,7 +32,7 @@ margin: 0px; padding: 0px;
 }
 header{
 background-color: var(--basic-matt);
-padding-bottom: 60px; 
+padding-bottom: 50px; 
 }
 h2 {
 text-transform: uppercase;	
@@ -47,6 +47,11 @@ font-family: "Cuprum", Arial, sans-serif;
 font-size: 18px;
 line-height: 24px;
 font-weight: 400;
+}
+
+
+.level{
+margin-top: 60px;	
 }
 
 .block{
@@ -327,11 +332,19 @@ background: url(../img/icon/svg/Shape.svg) no-repeat;
 
 }
 
-.user-block{
+.registration-block{
 display: flex;
 align-content: flex-end;
 justify-content: space-between;
 flex-flow: wrap-reverse;	
+}
+
+.user-block{
+margin-top: -60px;
+padding-top: 0px;
+display: flex;
+flex-direction: column;
+align-items: center;	
 }
 
 .user-menu{
@@ -682,6 +695,26 @@ grid-area: c;
 grid-area:d; 
 }
 
+.left-label{
+display: block;
+position: absolute;
+left: 31px;
+bottom: 104px;
+width: 30px;
+height: 43px;
+background:url(../img/icon/Shape.png) no-repeat;	
+}
+
+.right-label{
+display: block;
+position: absolute;
+right: 336px;
+bottom: 104px;
+width: 30px;
+height: 43px;
+background:url(../img/icon/icon-left.png) no-repeat;	
+}
+
 .men-toys span{
 color: var(--basic-white);
 margin: 24px;
@@ -697,7 +730,7 @@ color: var(--basic-white);
 .button-toys{	
 position: relative;
 background-color: var(--basic-red);
-right: 33%;
+right: 37%;
 top: 49%;
 padding: 12px 46px;
 text-align: center;
